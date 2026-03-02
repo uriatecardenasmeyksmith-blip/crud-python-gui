@@ -1,20 +1,19 @@
-data = []
+# crud.py
 
-def create(item):
-    data.append(item)
+def create():
+    # Aquí irá tu código para guardar en el CSV más adelante
+    print("Simulando creación de registro...")
     return True
 
 def read():
-    return data
+    # Aquí irá tu código para leer el CSV más adelante
+    print("Simulando lectura de datos...")
+    return True
 
-def update(index, new_item):
-    if 0 <= index < len(data):
-        data[index] = new_item
-        return True
-    return False
+def update():
+    print("Simulando actualización...")
+    return True
 
-def delete(index):
-    if 0 <= index < len(data):
-        data.pop(index)
-        return True
-    return False
+def delete():
+    print("Simulando eliminación...")
+    return True

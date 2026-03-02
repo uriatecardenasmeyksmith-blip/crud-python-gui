@@ -1,13 +1,16 @@
-import sys
-import os
-
-# Esto le dice a GitHub: "Sube un nivel y busca ahí el archivo crud.py"
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-
-from crud import create, read, update, delete
+# tests/test_crud.py
+import crud
+import pytest
 
 def test_create():
-    assert create() == True
+    # Llama a la función del otro archivo y verifica que devuelva True
+    assert crud.create() == True
 
 def test_read():
-    assert read() == True
+    assert crud.read() == True
+
+def test_update():
+    assert crud.update() == True
+
+def test_delete():
+    assert crud.delete() == True
