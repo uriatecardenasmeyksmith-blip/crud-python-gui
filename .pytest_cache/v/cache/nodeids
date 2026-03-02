@@ -1,0 +1,5 @@
+[
+  "tests/test_crud.py::test_create_and_read",
+  "tests/test_crud.py::test_delete",
+  "tests/test_crud.py::test_update"
+]
